@@ -10,7 +10,7 @@ class Date {
         int day;
         int year;
     public:
-        string static const MONTHS[12];
+        static const string MONTHS[12];
         Date() : month(1), day(1), year(1900){};
         Date(int m, int d, int y) : month(m),day(d),year(y){};
         int getMonth()const;

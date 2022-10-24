@@ -10,7 +10,6 @@
 #include <fstream>
 #include <vector>
 using namespace std;
-string const Date::MONTHS[12] = {"January", "Febrary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 int main (int argc, char const *argv[]){
     ifstream inputfile;
     ofstream outputfile;
