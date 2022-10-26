@@ -2,7 +2,7 @@
 #include "Date.h"
 #include <iostream>
 using namespace std;
-string const Date::MONTHS[12] = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
+string const Date::MONTHS[] = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
 int Date::getMonth()const{
     return month;
 }
@@ -51,4 +51,14 @@ bool Date::compare(const Date& d1, const Date& d2){
             }
         }
     }
+}
+Date::Date(){
+    day = 1;
+    month = 1;
+    year = 1900;
+}
+Date::Date(int m, int d, int y){
+    month = m;
+    day = d;
+    year = y;
 }

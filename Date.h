@@ -11,8 +11,8 @@ class Date {
         int year;
     public:
         static const string MONTHS[12];
-        Date() : month(1), day(1), year(1900){};
-        Date(int m, int d, int y) : month(m),day(d),year(y){};
+        Date();
+        Date(int m, int d, int y);
         int getMonth()const;
         void setMonth(int userMonth);
 
